@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+</head>
+
+<body>
+    <h1>Lista de tarefas</h1>
+
+    <div class="tarefa_add">
+        <input id="inputTarefa" type="text" placeholder="Digite uma tarefa">
+        <button id="btn-add" onclick="adicionarTarefa()">Adicionar</button>
+    </div>
+
+    <div class="erro">
+        <p id="campo-texto"></p>
+    </div>
+
+    <main id="areaLista">
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
