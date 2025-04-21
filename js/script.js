@@ -51,12 +51,12 @@ function marcarTarefa(id) {
   let itemMarcado = document.getElementById(id);
   let classe = itemMarcado.getAttribute("class");
 
-  if (classe == "item") {
-    itemMarcado.classList.add("clicado");
+  if (classe === "item") {
+    itemMarcado.className = "item clicado";
 
     let icone = document.getElementById("icone_" + id);
-    icone.className.remove("mdi mdi-radiobox-blank");
-    icone.className.add("mdi mdi-checkbox-marked-circle");
+    icone.className = "mdi mdi-check-circle";
+    icone.style.color = "green";
   }
 }
 
