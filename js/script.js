@@ -57,6 +57,16 @@ function marcarTarefa(id) {
     let icone = document.getElementById("icone_" + id);
     icone.className = "mdi mdi-check-circle";
     icone.style.color = "green";
+
+    main.insertBefore(itemMarcado, main.beforeChild);
+  } else {
+    itemMarcado.className = "item";
+
+    let icone = document.getElementById("icone_" + id);
+    icone.className = "mdi mdi-radiobox-blank";
+    icone.style.color = "black";
+
+    main.insertBefore(itemMarcado, main.firstChild);
   }
 }
 
